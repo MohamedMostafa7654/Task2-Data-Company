@@ -1,0 +1,368 @@
+/*====================
+    Responsive css Main
+======================*/
+
+/*
+    Media Queries
+    Responsive Design
+    - Concept Of Width
+    - Mobile
+    - Small Screens
+    - Medium Screens
+    - Large Screens
+    - Future Updates
+*/
+
+
+
+/* (Small devices old, 320px and up) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .title {
+        padding: 30px 10px 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .title h1 {
+        font-size: 1.1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        olor: var(--primary-color-title);
+    }
+    
+    .title > h1::after {
+        display: block;
+        content: "";
+        width: 25%;
+        height: 3.5px;
+        position: absolute;
+        bottom: 14%;
+        left: 35%;
+        background-color: var(--back-color);
+    }
+    
+    .service-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 300px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .icons {
+        position: relative;
+        bottom: 20px;
+        right: 5px;
+        padding: 10px;
+        display: grid;
+        place-items: center;
+        margin-left: 10px;
+        width: 85px;
+        height: 45px;
+    }
+
+    .fa-solid {
+        color: var(--white-color);
+        font-size: 14.5px;
+    }
+
+    .col .paragraf {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .paragraf h3 {
+        font-size: 14.5px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .paragraf p {
+        font-size: 10.5px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+}
+
+/* (Small devices Modern, 480px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .title {
+        padding: 30px 10px 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .title h1 {
+        font-size: 1.5em;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        olor: var(--primary-color-title);
+    }
+    
+    .title > h1::after {
+        display: block;
+        content: "";
+        width: 25%;
+        height: 3.5px;
+        position: absolute;
+        bottom: 14%;
+        left: 35%;
+        background-color: var(--back-color);
+    }
+    
+    .service-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 400px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .icons {
+        position: relative;
+        bottom: 20px;
+        right: 5px;
+        padding: 20px;
+        display: grid;
+        place-items: center;
+        margin-left: 10px;
+        width: 75px;
+        height: 55px;
+    }
+
+    .fa-solid {
+        color: var(--white-color);
+        font-size: 19px;
+    }
+
+    .col .paragraf {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    
+    .paragraf h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .paragraf p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+}
+
+/* (Tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .title {
+        padding: 30px 10px 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .title h1 {
+        font-size: 1.3em;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        olor: var(--primary-color-title);
+    }
+    
+    .title > h1::after {
+        display: block;
+        content: "";
+        width: 25%;
+        height: 3.5px;
+        position: absolute;
+        bottom: 14%;
+        left: 35%;
+        background-color: var(--back-color);
+    }
+    
+    .service-item {
+        display: grid;
+        grid-template-columns: repeat(2, 330px);
+        grid-template-rows: repeat(3, 180px);
+        column-gap: 60px;
+    }
+
+    .icons {
+        position: relative;
+        bottom: 20px;
+        right: 5px;
+        padding: 15px;
+        display: grid;
+        place-items: center;
+        margin-left: 10px;
+        width: 95px;
+        height: 55px;
+    }
+
+    .fa-solid {
+        color: var(--white-color);
+        font-size: 18px;
+    }
+
+    .col .paragraf {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    
+    .paragraf h3 {
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .paragraf p {
+        font-size: 12.5px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+}
+
+/* (Desktops small laptops , 1024px and up) */
+@media (min-width: 1000px) and (max-width: 1200px){
+
+    .title h1 {
+        font-size: 1.3em;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        olor: var(--primary-color-title);
+    }
+    
+    .title > h1::after {
+        width: 25%;
+        height: 3.5px;
+    }
+    
+    .service-item {
+        display: grid;
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: repeat(3, 180px);
+        column-gap: 5px;
+        row-gap: 40px;
+    }
+
+    .icons {
+        position: relative;
+        bottom: 20px;
+        right: 5px;
+        padding: 15px;
+        display: grid;
+        place-items: center;
+        margin-left: 10px;
+        width: 110px;
+        height: 65px;
+    }
+
+    .fa-solid {
+        color: var(--white-color);
+        font-size: 24px;
+    }
+
+    .col .paragraf {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    
+    .paragraf h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .paragraf p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+}
+
+/* (Desktops medium screens and Large laptops. , 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1300px){
+
+    .title h1 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 500;
+        color: var(--primary-color-title);
+    }
+    
+    .title > h1::after {
+        width: 24%;
+        height: 2.5px;
+        position: absolute;
+        bottom: 14%;
+        left: 35%;
+    }
+    
+    .service-item {
+        display: grid;
+        grid-template-columns: repeat(4, 275px);
+        grid-template-rows: repeat(1, 200px);
+        gap: 20px 5px;
+    }
+
+    .icons {
+        padding: 15px;
+        margin-left: 10px;
+        width: 140px;
+        height: 55px;
+    }
+
+    .fa-solid {
+        font-size: 21px;
+    }
+
+    .col .paragraf {
+        margin-left: 20px;
+        margin-right: 15px;
+        text-align: left;
+    }
+    
+    .paragraf h3 {
+        font-size: 13.5px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .paragraf p {
+        font-size: 11.5px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+    
+}
+
+/* (Extra large screens, 1600px and up) */
+@media (min-width: 1600px) {
+
+}
